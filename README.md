@@ -3,8 +3,9 @@ Require [Conky](https://github.com/brndnmtthws/conky) is installed in your syste
 # Install
 
 ```
-$ mkdir -p ~/.conky/Thinkpad && git clone https://github.com/lbngoc/conkyrc.git ~/conky/Thinkpad
-$ sed -i -e "s/ngoclb/$(whoami)/g" ~/.conky/Thinkpad/thinkpad-t440.conkyrc
+$ mkdir -p ~/.conky/conky_main_conf && git clone  git@github.com:jeis-aj/conky_main_conf.git ~/.conky/conky_main_conf
+
+$ sed -i -e "s/ngoclb/$(whoami)/g" ~/.conky/conky_main_conf/main.conkyrc
 ```
 
 Setup `thinkpad-wallpaper.png` as your desktop wallpaper.
@@ -12,7 +13,7 @@ Setup `thinkpad-wallpaper.png` as your desktop wallpaper.
 # Usage
 
 ```
-$ conky -q -c ~/.conky/Thinkpad/thinkpad-t440.conkyrc &> /dev/null
+$ conky -q -c ~/.conky/conky_main_conf/main.conkyrc &> /dev/null
 ```
 
 # Screenshot
